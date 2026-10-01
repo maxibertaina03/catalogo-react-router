@@ -11,7 +11,7 @@ function Catalogo() {
           <Col key={peli.id} xs={24} sm={12} md={8} lg={6}>
             <Card
               hoverable
-              cover={<img alt={peli.nombre} src={peli.imagen} />}
+              cover={<img alt={peli.nombre} src={peli.imagen} style={{ height: 380, objectFit: 'cover' }} />}
               actions={[<Link key="detalle" to={`/catalogo/${peli.id}`}>Ver detalle</Link>]}
             >
               <Card.Meta title={peli.nombre} />

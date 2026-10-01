@@ -20,7 +20,7 @@ function Detalle() {
   }
 
   return (
-    <Card style={{ maxWidth: 600, margin: '0 auto' }} cover={<img alt={peli.nombre} src={peli.imagen} />}>
+    <Card style={{ maxWidth: 400, margin: '0 auto' }} cover={<img alt={peli.nombre} src={peli.imagen} />}>
       <Typography.Title level={2}>{peli.nombre}</Typography.Title>
       <Typography.Paragraph>{peli.descripcion}</Typography.Paragraph>
       <Button type="primary" onClick={() => navigate('/catalogo')}>Volver</Button>
